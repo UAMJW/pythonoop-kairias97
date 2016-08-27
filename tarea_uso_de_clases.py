@@ -95,7 +95,8 @@ class CarritoCompra:
 	return ('Subtotal: ' + str(self._subTotal) + '\n' + 'IVA: ' + str(self._iva) + '\n' + 'Total: ' + str(self._total) + '\n')
     def hayDescuento(self):
 	return (("Se dio descuento de " + str (self._subTotal * 0.10) + " (10%) en el subtotal por ser cliente preferencial") if self._cliente._esPreferencial else "No recibe descuento por ser cliente normal.")
-"""Creo 3 productos nuevos productos"""
+
+"""Instanciacion de 4 productos nuevos"""
 print 'CREACION DE PRODUCTOS'
 p1 = Producto('P01', 'Producto de prueba 1', 200)
 p2 = Producto('P02', 'Producto de prueba 2', 300)
