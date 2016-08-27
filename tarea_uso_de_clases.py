@@ -107,13 +107,13 @@ p1.reducirPrecio(50)
 
 print "" 
 """Prueba de acceso a las propiedades de un Producto"""
-print 'Accessando a las propiedades del primer objeto de tipo producto instanciado'
+print 'Accessando a las propiedades del primer objeto de tipo Producto instanciado'
 print 'Codigo del producto: ' + p1._codigoProducto
 print 'Descripcion: ' + p1._descripcion
 print 'Precio Unitario: ' + str(p1._precioUnitario)
 
 print""
-"""Creo un nuevo cliente"""
+"""Creo e instancio un nuevo cliente"""
 cl = Cliente('CL01', 'Kevin Alexander Irias Hernandez', True )
 """Datos del nuevo cliente creado"""
 print 'Datos del objeto cliente instanciado'
