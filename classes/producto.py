@@ -31,4 +31,8 @@ class Producto:
             self._precioUnitario -= monto
 	else:
             print 'El monto a reducir no puede ser mayor que el precio.'
-
+    def __str__(self):
+	return ('Codigo del Producto: ' + self._codigoProducto + '\n' +
+               'Descripcion: ' + self._descripcion + '\n' +
+               'Precio Unitario: ' + str(self._precioUnitario) + '\n')
+ 
