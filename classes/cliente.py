@@ -1,10 +1,16 @@
-class Cliente:
-    def __init__(self, id_cliente, nom_comp, pref):
-        self._idCliente = id_cliente
-	self._nombreCompleto = nom_comp
+from persona import Persona
+class Cliente(Persona):
+    def __init__(self, nom_comp, edad, sexo, est_civ,id_cliente, pref):
+        Persona.__init__(self, nom_comp, edad, sexo, est_civ)
+	self._idCliente = id_cliente
 	self._esPreferencial = pref
 
-    def mostrarInfoCliente(self):
-	return ('Codigo del cliente: ' + self._idCliente + '\n' +  
-	       'Nombre completo: ' + self._nombreCompleto + '\n' +
-	       "Preferencial: " + ("SI" if self._esPreferencial else "No" ))
+    def __str__(self):
+	return ('Nombre Completo: ' + self._nombreCompleto + '\n' + 
+		'Edad: ' + str(self._edad) + '\n' + 
+		'Sexo: ' + self._sexo + '\n' + 
+		'Estado Civil: ' + self._estadoCivil + '\n' + 
+		'Codigo del cliente: ' + self._idCliente + '\n' +  
+	        'Preferencial: ' + ('SI' if self._esPreferencial else 'No' ))
+    def presentarse(self):
+	print "Hola. Soy una instancia de la clase Cliente, y heredo propiedades de una persona."
