@@ -38,3 +38,11 @@ class CarritoCompra(object):
 	return ('Subtotal: ' + str(self._subTotal) + '\n' + 'IVA: ' + str(self._iva) + '\n' + 'Total: ' + str(self._total) + '\n')
     def notificarDescuento(self):
 	return (("Se dio descuento de " + str (self._subTotal * 0.10) + " (10%) en el subtotal por ser cliente preferencial") if self._cliente._esPreferencial else "No recibe descuento por ser cliente normal.")
+    def __str__(self):
+	return ('\t**Datos del Carrito de compras**' + '\n' + '\n' +  
+		'---Datos del cliente---' + '\n' + 
+		str(self._cliente)+ '\n' + 
+		'---Contenido del carrito---' + '\n' + 
+		self.obtenerDetalleCarrito() + '\n' + 
+		'---Resumen de monto a pagar---' + '\n' + 
+		self.obtenerResumentMontos() + '\n')
