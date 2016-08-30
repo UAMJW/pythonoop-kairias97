@@ -43,6 +43,6 @@ class CarritoCompra(object):
 		'---Datos del cliente---' + '\n' + 
 		str(self._cliente)+ '\n' + 
 		'---Contenido del carrito---' + '\n' + 
-		self.obtenerDetalleCarrito() + '\n' + 
+		self.obtenerDetalleCarrito() + 
 		'---Resumen de monto a pagar---' + '\n' + 
-		self.obtenerResumentMontos() + '\n')
+		self.obtenerResumenMontos())
