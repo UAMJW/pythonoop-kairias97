@@ -9,6 +9,5 @@ class Persona(object):
 		'Edad: ' + str(self._edad) + '\n' + 
 	 	'Sexo: ' + self._sexo + '\n' +
 		'Estado Civil:' + self._estadoCivil + '\n')
-    """"""
     def presentarse(self):
-	pass	
+	print 'Hola, soy una persona comun y corriente!'
