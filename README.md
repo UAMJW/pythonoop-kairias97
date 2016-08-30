@@ -8,5 +8,16 @@ Lenguaje | Versión utilizada |
 --- | ---|
 Python | 2.7.12 |
 
-#Pasos para ejecutar 
-1. Primero clona el repositorio remoto a tu máquina.
+##Pasos para ejecutar 
+*  Primero clona el repositorio remoto a tu máquina.
+```bash
+  git clone https://github.com/UAMJW/pythonoop-kairias97.git
+```
+*  Abre la terminal de linux o de Windows en el directorio donde clonaste el repositorio y ejecuta el siguiente comando.
+```bash
+  cd pythonoop-kairias97
+```
+*  Una vez dentro del directorio raíz del repositorio clonado, ejecuta el siguiente comando para probar el programa:
+```bash
+  python main.py
+```
