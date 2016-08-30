@@ -1,7 +1,8 @@
 from persona import Persona
-class Empleado(object):
-    def __init__(self, nom_comp, edad, sexo, est_civ, cargo, salario):
+class Empleado(Persona):
+    def __init__(self, nom_comp, edad, sexo, est_civ, cod_empl, cargo, salario):
 	Persona.__init__(self, nom_comp, edad, sexo, est_civ)
+	self._codigoEmpleado = cod_empl
 	self._cargo = cargo
 	self._salario = salario
     def presentarse(self):
@@ -12,4 +13,4 @@ class Empleado(object):
 		'Sexo: ' + self._sexo + '\n' + 
 		'Estado Civil: ' + self._estadoCivil + '\n' + 
 		'Cargo: ' + self._cargo + '\n' + 
-		'Salario: ' + self._salario + '\n')
+		'Salario: ' + str(self._salario) + '\n')
