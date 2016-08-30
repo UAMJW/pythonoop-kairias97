@@ -11,6 +11,6 @@ class Cliente(Persona):
 		'Sexo: ' + self._sexo + '\n' + 
 		'Estado Civil: ' + self._estadoCivil + '\n' + 
 		'Codigo del cliente: ' + self._idCliente + '\n' +  
-	        'Preferencial: ' + ('SI' if self._esPreferencial else 'No' ))
+	        'Preferencial: ' + ('SI' if self._esPreferencial else 'No' ) + '\n')
     def presentarse(self):
 	print "Hola. Soy una instancia de la clase Cliente, y heredo propiedades de una persona."
